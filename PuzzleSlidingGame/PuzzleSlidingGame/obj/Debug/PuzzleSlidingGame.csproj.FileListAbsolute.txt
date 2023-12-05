@@ -1,0 +1,10 @@
+C:\Users\kirtanpatel\source\repos\PuzzleSlidingGame\PuzzleSlidingGame\bin\Debug\PuzzleSlidingGame.exe.config
+C:\Users\kirtanpatel\source\repos\PuzzleSlidingGame\PuzzleSlidingGame\bin\Debug\PuzzleSlidingGame.exe
+C:\Users\kirtanpatel\source\repos\PuzzleSlidingGame\PuzzleSlidingGame\bin\Debug\PuzzleSlidingGame.pdb
+C:\Users\kirtanpatel\source\repos\PuzzleSlidingGame\PuzzleSlidingGame\obj\Debug\PuzzleSlidingGame.csproj.AssemblyReference.cache
+C:\Users\kirtanpatel\source\repos\PuzzleSlidingGame\PuzzleSlidingGame\obj\Debug\PuzzleSlidingGame.Form1.resources
+C:\Users\kirtanpatel\source\repos\PuzzleSlidingGame\PuzzleSlidingGame\obj\Debug\PuzzleSlidingGame.Properties.Resources.resources
+C:\Users\kirtanpatel\source\repos\PuzzleSlidingGame\PuzzleSlidingGame\obj\Debug\PuzzleSlidingGame.csproj.GenerateResource.cache
+C:\Users\kirtanpatel\source\repos\PuzzleSlidingGame\PuzzleSlidingGame\obj\Debug\PuzzleSlidingGame.csproj.CoreCompileInputs.cache
+C:\Users\kirtanpatel\source\repos\PuzzleSlidingGame\PuzzleSlidingGame\obj\Debug\PuzzleSlidingGame.exe
+C:\Users\kirtanpatel\source\repos\PuzzleSlidingGame\PuzzleSlidingGame\obj\Debug\PuzzleSlidingGame.pdb
