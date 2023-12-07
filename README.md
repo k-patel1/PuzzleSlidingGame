@@ -51,4 +51,4 @@ This project is licensed under the [MIT License](LICENSE.md).
 
 ## Author
 
-Kirtan Patel
+Kirtan Patel, Enes Gunerli
