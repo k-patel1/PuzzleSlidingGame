@@ -35,7 +35,7 @@
             this.btnSampleImages = new System.Windows.Forms.Button();
             this.labelPlayer01Timer = new System.Windows.Forms.Label();
             this.labelPlayer02Timer = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnPause = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelPlayer1Name
@@ -114,16 +114,16 @@
             this.labelPlayer02Timer.TabIndex = 11;
             this.labelPlayer02Timer.Text = "Timer2";
             // 
-            // button1
+            // btnPause
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(13, 361);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(232, 71);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Pause";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnPause.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPause.Location = new System.Drawing.Point(13, 359);
+            this.btnPause.Name = "btnPause";
+            this.btnPause.Size = new System.Drawing.Size(232, 83);
+            this.btnPause.TabIndex = 12;
+            this.btnPause.Text = "Pause";
+            this.btnPause.UseVisualStyleBackColor = true;
+            this.btnPause.Click += new System.EventHandler(this.btnPause_Click_1);
             // 
             // MainForm
             // 
@@ -132,7 +132,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.ClientSize = new System.Drawing.Size(1691, 947);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnPause);
             this.Controls.Add(this.labelPlayer02Timer);
             this.Controls.Add(this.labelPlayer01Timer);
             this.Controls.Add(this.btnSampleImages);
@@ -156,7 +156,8 @@
         private System.Windows.Forms.Button btnSampleImages;
         private System.Windows.Forms.Label labelPlayer01Timer;
         private System.Windows.Forms.Label labelPlayer02Timer;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnPause_Click;
+        private System.Windows.Forms.Button btnPause;
     }
 }
 

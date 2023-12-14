@@ -50,9 +50,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(267, 157);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(222, 42);
+            this.label1.Size = new System.Drawing.Size(222, 84);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Kirtan Patel\r\n";
+            this.label1.Text = "Kirtan Patel\r\nBhumin ";
             // 
             // aboutForm
             // 
