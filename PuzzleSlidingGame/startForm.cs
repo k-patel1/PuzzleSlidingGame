@@ -1,5 +1,4 @@
-﻿// StartForm.cs
-using System;
+﻿using System;
 using System.Windows.Forms;
 
 namespace PuzzleSlidingGame
@@ -45,7 +44,7 @@ namespace PuzzleSlidingGame
                     return;
                 }
 
-                const int maxNameLength = 20; // Set a reasonable maximum length for player names
+                const int maxNameLength = 20; //This is a reasonable maximum length for player names
 
                 if (textBoxPlayer01.Text.Length > maxNameLength || textBoxPlayer02.Text.Length > maxNameLength)
                 {
@@ -82,7 +81,7 @@ namespace PuzzleSlidingGame
                 // Start the timer
                 mainForm.StartTimer();
 
-                // Hide the startForm (optional)
+                // Hide the startForm
                 this.Hide();
             }
             catch (Exception ex)

@@ -20,7 +20,7 @@ namespace PuzzleSlidingGame
 
         private Bitmap mainBitmap;
 
-        private Timer timer; // Timer for tracking elapsed time
+        private Timer timer; 
 
         private Button btnPauseTime;
 

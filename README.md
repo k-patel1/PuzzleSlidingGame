@@ -1,54 +1,46 @@
 # Puzzle Sliding Game
 
-## Description
-
-Puzzle Sliding Game is a simple Windows Forms application written in C# that allows users to play a sliding puzzle game. The game loads an image, divides it into smaller pieces, shuffles them, and challenges the player to rearrange the pieces to win.
+**Welcome to the Puzzle Sliding Game!** This is a C# Windows Forms application that allows one or two players to compete in solving a sliding puzzle. The game features image upload, timer tracking, and player name entry.
 
 ## Features
 
-- Load an image file (supported formats: .jpg, .jpeg, .gif, .bmp).
-- Play a sliding puzzle game with a 3x3 grid of image pieces.
-- Check for a win condition and display a "You Win!" message.
+- Single-player and two-player modes.
+- Image upload functionality.
+- Sample images provided for a quick start.
+- Player name entry and validation.
+- Timer to track player time.
+- Pause functionality for the game timer.
+- Win detection and display of the winning player and time taken.
+- Player time records saved to a file.
 
-## How to Use
+## Getting Started
 
-1. Run the application.
-2. Click on the "Open Image" button to load an image for the puzzle.
-3. Enjoy playing the sliding puzzle game!
-4. If you successfully arrange the pieces, a "You Win!" message will be displayed.
+To run the Puzzle Sliding Game:
 
-## Screenshots
-
-Include screenshots or GIFs demonstrating the gameplay or key features of your application.
-
-## Development Environment
-
-- **Language:** C#
-- **Framework:** .NET Windows Forms
-- **IDE:** Visual Studio (or your preferred C# development environment)
-
-## How to Install
-
-1. Clone the repository to your local machine.
-2. Open the project in your preferred C# development environment.
+1. Clone or download the project files.
+2. Open the project in Visual Studio or your preferred C# IDE.
 3. Build and run the application.
 
-## Dependencies
+## Usage
 
-List any external libraries or frameworks used in your application.
+1. **Start Form**
+   - Enter player names.
+   - Select the number of players (Single or Two Players).
+   - Click the "Start Game" button.
 
-## Contributing
+2. **Main Form**
+   - Choose an image (upload or use a sample).
+   - Slide puzzle pieces by clicking on them.
+   - Timer starts automatically; use the "Pause" button to pause.
+   - Game detects win condition, displaying the winner and time.
 
-If you would like to contribute to the project, please follow the steps below:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and submit a pull request.
+3. **About and How to Play Forms**
+   - Click "About" or "How to Play" on the Start Form.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE.md).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Author
 
-Kirtan Patel
+This Puzzle Sliding Game was created by Kirtan Patel.
