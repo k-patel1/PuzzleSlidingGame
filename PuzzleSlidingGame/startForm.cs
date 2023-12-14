@@ -31,20 +31,31 @@ namespace PuzzleSlidingGame
         {
             try
             {
-                // Validate player names
-                if (string.IsNullOrWhiteSpace(textBoxPlayer01.Text) || string.IsNullOrWhiteSpace(textBoxPlayer02.Text))
+                // Validate player names based on the selected number of players
+                if (comboBoxPlayers.SelectedItem.ToString() == "Single")
                 {
-                    MessageBox.Show("Please enter names for all players.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
+                    if (string.IsNullOrWhiteSpace(textBoxPlayer01.Text))
+                    {
+                        MessageBox.Show("Please enter a name for Player 1.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                }
+                else if (comboBoxPlayers.SelectedItem.ToString() == "Two Players")
+                {
+                    if (string.IsNullOrWhiteSpace(textBoxPlayer01.Text) || string.IsNullOrWhiteSpace(textBoxPlayer02.Text))
+                    {
+                        MessageBox.Show("Please enter names for both players.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    if (textBoxPlayer01.Text == textBoxPlayer02.Text)
+                    {
+                        MessageBox.Show("Player names must be different.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
                 }
 
-                if (textBoxPlayer01.Text == textBoxPlayer02.Text)
-                {
-                    MessageBox.Show("Player names must be different.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                const int maxNameLength = 20; //This is a reasonable maximum length for player names
+                const int maxNameLength = 20; // This is a reasonable maximum length for player names
 
                 if (textBoxPlayer01.Text.Length > maxNameLength || textBoxPlayer02.Text.Length > maxNameLength)
                 {
@@ -89,7 +100,6 @@ namespace PuzzleSlidingGame
                 MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
 
         private void btnAbout_Click(object sender, EventArgs e)
         {
