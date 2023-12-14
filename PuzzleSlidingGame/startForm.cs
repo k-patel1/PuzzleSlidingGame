@@ -32,6 +32,27 @@ namespace PuzzleSlidingGame
         {
             try
             {
+                // Validate player names
+                if (string.IsNullOrWhiteSpace(textBoxPlayer01.Text) || string.IsNullOrWhiteSpace(textBoxPlayer02.Text))
+                {
+                    MessageBox.Show("Please enter names for all players.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (textBoxPlayer01.Text == textBoxPlayer02.Text)
+                {
+                    MessageBox.Show("Player names must be different.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                const int maxNameLength = 20; // Set a reasonable maximum length for player names
+
+                if (textBoxPlayer01.Text.Length > maxNameLength || textBoxPlayer02.Text.Length > maxNameLength)
+                {
+                    MessageBox.Show($"Player names cannot exceed {maxNameLength} characters.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
                 // Create an instance of the mainForm
                 MainForm mainForm = new MainForm();
 
@@ -69,6 +90,7 @@ namespace PuzzleSlidingGame
                 MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         private void btnAbout_Click(object sender, EventArgs e)
         {

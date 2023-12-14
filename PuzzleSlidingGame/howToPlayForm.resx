@@ -117,4 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>            How to Play: Sliding Puzzle Game
+
+1. Start a New Game: Upload your own image or 
+   press random sample images and it will pick for you.
+		
+2. Tile Movement: Click on a tile next to the empty 
+    space to swap positions.
+		
+3. Winning the Game: Arrange tiles in ascending 
+    order to reveal the complete image.
+		
+4. Player Timers: Player 1's time is displayed. In a 
+    two-player game, Player 2's time is also shown.
+		
+5. Game End: The game is won when tiles are in the 
+   correct order. In a two player game the winner is 
+   whoever solves their puzzle fastest.</value>
+  </data>
 </root>

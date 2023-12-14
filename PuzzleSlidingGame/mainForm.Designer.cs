@@ -35,6 +35,7 @@
             this.btnSampleImages = new System.Windows.Forms.Button();
             this.labelPlayer01Timer = new System.Windows.Forms.Label();
             this.labelPlayer02Timer = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelPlayer1Name
@@ -52,7 +53,7 @@
             this.labelPlayer01Name.AutoSize = true;
             this.labelPlayer01Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPlayer01Name.ForeColor = System.Drawing.Color.White;
-            this.labelPlayer01Name.Location = new System.Drawing.Point(34, 676);
+            this.labelPlayer01Name.Location = new System.Drawing.Point(25, 814);
             this.labelPlayer01Name.Name = "labelPlayer01Name";
             this.labelPlayer01Name.Size = new System.Drawing.Size(143, 42);
             this.labelPlayer01Name.TabIndex = 6;
@@ -63,7 +64,7 @@
             this.labelPlayer02Name.AutoSize = true;
             this.labelPlayer02Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPlayer02Name.ForeColor = System.Drawing.Color.White;
-            this.labelPlayer02Name.Location = new System.Drawing.Point(1258, 676);
+            this.labelPlayer02Name.Location = new System.Drawing.Point(970, 814);
             this.labelPlayer02Name.Name = "labelPlayer02Name";
             this.labelPlayer02Name.Size = new System.Drawing.Size(143, 42);
             this.labelPlayer02Name.TabIndex = 7;
@@ -85,9 +86,9 @@
             this.btnSampleImages.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSampleImages.Location = new System.Drawing.Point(13, 145);
             this.btnSampleImages.Name = "btnSampleImages";
-            this.btnSampleImages.Size = new System.Drawing.Size(232, 116);
+            this.btnSampleImages.Size = new System.Drawing.Size(232, 197);
             this.btnSampleImages.TabIndex = 9;
-            this.btnSampleImages.Text = "Sample Images";
+            this.btnSampleImages.Text = "Random Sample Images";
             this.btnSampleImages.UseVisualStyleBackColor = true;
             this.btnSampleImages.Click += new System.EventHandler(this.btnSampleImages_Click);
             // 
@@ -96,24 +97,33 @@
             this.labelPlayer01Timer.AutoSize = true;
             this.labelPlayer01Timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPlayer01Timer.ForeColor = System.Drawing.Color.White;
-            this.labelPlayer01Timer.Location = new System.Drawing.Point(34, 767);
+            this.labelPlayer01Timer.Location = new System.Drawing.Point(25, 875);
             this.labelPlayer01Timer.Name = "labelPlayer01Timer";
             this.labelPlayer01Timer.Size = new System.Drawing.Size(121, 37);
             this.labelPlayer01Timer.TabIndex = 10;
             this.labelPlayer01Timer.Text = "Timer1";
-            this.labelPlayer01Timer.Click += new System.EventHandler(this.labelPlayer01Timer_Click);
             // 
             // labelPlayer02Timer
             // 
             this.labelPlayer02Timer.AutoSize = true;
             this.labelPlayer02Timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPlayer02Timer.ForeColor = System.Drawing.Color.White;
-            this.labelPlayer02Timer.Location = new System.Drawing.Point(1260, 767);
+            this.labelPlayer02Timer.Location = new System.Drawing.Point(970, 875);
             this.labelPlayer02Timer.Name = "labelPlayer02Timer";
             this.labelPlayer02Timer.Size = new System.Drawing.Size(123, 37);
             this.labelPlayer02Timer.TabIndex = 11;
             this.labelPlayer02Timer.Text = "Timer2";
-            this.labelPlayer02Timer.Visible = false;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(13, 361);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(232, 71);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Pause";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MainForm
             // 
@@ -121,7 +131,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.ClientSize = new System.Drawing.Size(1600, 865);
+            this.ClientSize = new System.Drawing.Size(1691, 947);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.labelPlayer02Timer);
             this.Controls.Add(this.labelPlayer01Timer);
             this.Controls.Add(this.btnSampleImages);
@@ -132,7 +143,6 @@
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "MainForm";
             this.Text = "Puzzle Sliding Game";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -146,6 +156,7 @@
         private System.Windows.Forms.Button btnSampleImages;
         private System.Windows.Forms.Label labelPlayer01Timer;
         private System.Windows.Forms.Label labelPlayer02Timer;
+        private System.Windows.Forms.Button button1;
     }
 }
 
