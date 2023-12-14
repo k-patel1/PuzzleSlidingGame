@@ -17,10 +17,11 @@ namespace PuzzleSlidingGame
 
         private Player currentPlayer;
         private DateTime startTime;
+        private TimeSpan elapsedTimeBeforePause;
 
         private Bitmap mainBitmap;
 
-        private Timer timer; 
+        private Timer timer;
 
         private Button btnPauseTime;
 
@@ -135,11 +136,12 @@ namespace PuzzleSlidingGame
             if (timer.Enabled)
             {
                 timer.Stop();
+                elapsedTimeBeforePause = DateTime.Now - startTime;
             }
             else
             {
+                startTime = DateTime.Now - elapsedTimeBeforePause; // Resume the timer with elapsed time accounted for
                 timer.Start();
-                startTime = DateTime.Now; // Resume the timer
             }
         }
 
